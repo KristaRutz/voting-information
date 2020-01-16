@@ -12,12 +12,14 @@
       <h1 class="jumbotron">Voting Information</h1>
       <p>Here is some information about voting!</p>
       <p>Participating in democracy is very important!</p>
+
       <div id="ofVotingAge" class="ageSpecificInfo">
         <p>One of the most effective ways to participate in the democratic process is to vote! If you are not already registered to vote, please visit the link below:</p>
         <a target="_blank" href="https://www.vote.org/register-to-vote/">
           <button class="btn btn-primary">Register to Vote!</button>
         </a>
       </div>
+
       <div id="minors" class="ageSpecificInfo">
         <p>Although you're too young to vote right now, here are some ways you can be involved in the democratic process!</p>
         <ul>
@@ -25,6 +27,70 @@
           <li>Help register voters</li>
         </ul>
       </div>
+
+      <h2>Determine your political leanings</h2>
+      <p>You can use our quiz to help you figure out whether you tend to think more conservatively or more progressively. Select the option that you feel most closely aligns with your views.</p>
+
+      <form>
+        <h4>Which of these politicians do you feel best encompasses your views?</h4>
+        <div class="form-group politicians">
+            <label class="radio-inline">
+              <input type="radio" name="politicians" value="1">Bernie Sanders
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="politicians" value="3">Donald Trump
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="politicians" value="2">It's hard for me to identify with partisan politicians
+            </label>
+        </div>
+
+        <h4>What is your stance on abortion?</h4>
+        <div class="form-group abortion">
+            <label class="radio-inline">
+              <input type="radio" name="abortion" value="3"> I am against abortion
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="abortion" value="1"> I believe individuals should be able to choose whether or not to get an abortion
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="abortion" value="2"> I think this issue is complicated
+            </label>
+        </div>
+
+        <h4>Where do you get your news?</h4>
+        <div class="form-group newsSource">
+            <label class="radio-inline">
+              <input type="radio" name="newsSource" value="3"> Fox News
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="newsSource" value="2"> I like to compare multiple sources
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="newsSource" value="1"> The New York Times
+            </label>
+        </div>
+
+        <h4>How should America deal with healthcare?</h4>
+        <div class="form-group healthcare">
+            <label class="radio-inline">
+              <input type="radio" name="healthcare" value="2"> I'm not sure
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="healthcare" value="3"> Individuals and private companies should be responsible for healthcare
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="healthcare" value="1"> Healthcare should be a publicly provided service
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+
+      </form>
+      <div class="result">
+      <p>Your political leanings score:</p> 
+      </div>
+
     </div>
   </body>
 </html>
